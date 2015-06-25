@@ -1,0 +1,43 @@
+package ActorsClass7
+
+
+import akka.actor._
+import akka.actor.ActorSystem
+
+
+/**
+ * Created by manishkosaraju on 6/24/15.
+ */
+
+case object File1{
+  val file1 = "/Users/manishkosaraju/Desktop/story.txt"
+}
+case object File2 {
+  val file2 = "/Users/manishkosaraju/Desktop/story1.txt"
+}
+class FileCount1 {
+
+}
+
+class FileCount2 {
+
+}
+
+object ActorFileCount extends App{
+
+  val system = ActorSystem("File Count")
+
+
+}
+
+
+build.sbt
+
+name := "ActorsClass7"
+
+version := "1.0"
+
+scalaVersion := "2.11.7"
+
+libraryDependencies += "com.typesafe.akka" % "akka-actor_2.11" % "2.3.9"
+    
